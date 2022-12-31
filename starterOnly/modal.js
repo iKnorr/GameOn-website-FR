@@ -6,6 +6,7 @@ function editNav() {
     x.className = "topnav";
   }
 }
+//Git add baby
 
 // DOM Elements
 const modalbg = document.querySelector(".bground");
@@ -19,5 +20,3 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 function launchModal() {
   modalbg.style.display = "block";
 }
-
-
