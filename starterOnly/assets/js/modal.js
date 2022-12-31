@@ -114,7 +114,7 @@ const checkQuantityTourneys = (quantity) => {
   return validation(
     quantity.value === "",
     quantity,
-    "Vous devez selectionez une numero."
+    "Veuillez saisir une valeur numérique valide."
   );
   // if (quantity.value === '') {
   //   quantity.parentElement.setAttribute('data-error-visible', 'true');
@@ -138,7 +138,7 @@ const checkRadioButtons = () => {
       btn.parentElement.setAttribute("data-error-visible", "true");
       btn.parentElement.setAttribute(
         "data-error",
-        "Vous devez choissir une option."
+        "Veuillez cocher un tournoi."
       );
     } else {
       btn.parentElement.setAttribute("data-error-visible", "");
