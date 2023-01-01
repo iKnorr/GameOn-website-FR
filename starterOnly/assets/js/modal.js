@@ -50,18 +50,6 @@ const checkName = (name, childEl) => {
     childEl,
     "Veuillez entrer 2 caractères ou plus pour ce champ."
   );
-  // if (!isBetween(userName.length, min)) {
-  //   childEl.parentElement.setAttribute('data-error-visible', 'true');
-  //   childEl.parentElement.setAttribute(
-  //     'data-error',
-  //     'Veuillez entrer 2 caractères ou plus pour ce champ.'
-  //   );
-  //   return false;
-  // } else {
-  //   childEl.parentElement.setAttribute('data-error-visible', '');
-  //   childEl.parentElement.setAttribute('data-error', '');
-  //   return true;
-  // }
 };
 
 // Email validation
@@ -73,18 +61,6 @@ const emailValidation = (email) => {
     email,
     "Votre address email est invalide."
   );
-  // if (email.value.match(regexEmail)) {
-  //   email.parentElement.setAttribute('data-error-visible', '');
-  //   email.parentElement.setAttribute('data-error', '');
-  //   return true;
-  // } else {
-  //   email.parentElement.setAttribute('data-error-visible', 'true');
-  //   email.parentElement.setAttribute(
-  //     'data-error',
-  //     'Votre address email est invalide.'
-  //   );
-  //   return false;
-  // }
 };
 
 // Birtday validation
@@ -94,18 +70,6 @@ const birtdayValidation = (birthday) => {
     birthday,
     "Vous devez entrer votre date de naissance."
   );
-  // if (birthday.value === '') {
-  //   birthday.parentElement.setAttribute('data-error-visible', 'true');
-  //   birthday.parentElement.setAttribute(
-  //     'data-error',
-  //     'Vous devez entrer votre date de naissance.'
-  //   );
-  //   return false;
-  // } else {
-  //   birthday.parentElement.setAttribute('data-error-visible', '');
-  //   birthday.parentElement.setAttribute('data-error', '');
-  //   return true;
-  // }
 };
 
 // Check Quantity of Tourneys
@@ -116,18 +80,6 @@ const checkQuantityTourneys = (quantity) => {
     quantity,
     "Veuillez saisir une valeur numérique valide."
   );
-  // if (quantity.value === '') {
-  //   quantity.parentElement.setAttribute('data-error-visible', 'true');
-  //   quantity.parentElement.setAttribute(
-  //     'data-error',
-  //     'Vous devez selectionez une numero.'
-  //   );
-  //   return false;
-  // } else {
-  //   quantity.parentElement.setAttribute('data-error-visible', '');
-  //   quantity.parentElement.setAttribute('data-error', '');
-  //   return true;
-  // }
 };
 
 // Check if Location is selected
