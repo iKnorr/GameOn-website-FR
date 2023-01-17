@@ -31,11 +31,10 @@ const validation = (condition, childEl, errorMsg) => {
     childEl.parentElement.setAttribute("data-error-visible", "true");
     childEl.parentElement.setAttribute("data-error", errorMsg);
     return false;
-  } else {
-    childEl.parentElement.setAttribute("data-error-visible", "");
-    childEl.parentElement.setAttribute("data-error", "");
-    return true;
   }
+  childEl.parentElement.setAttribute("data-error-visible", "");
+  childEl.parentElement.setAttribute("data-error", "");
+  return true;
 };
 
 // check length of first and last name
@@ -48,7 +47,7 @@ const checkName = (name, childEl) => {
   return validation(
     !isBetween(userName.length, min),
     childEl,
-    "Veuillez entrer 2 caractères ou plus pour ce champ."
+    "Veuillez entrer 3 caractères ou plus pour ce champ."
   );
 };
 
