@@ -42,12 +42,12 @@ const isBetween = (length, min) => (length < min ? false : true);
 
 // Name Validation
 const checkName = (name, childEl) => {
-  const min = 3;
+  const min = 2;
   const userName = name.value.trim();
   return validation(
     !isBetween(userName.length, min),
     childEl,
-    "Veuillez entrer 3 caractères ou plus pour ce champ."
+    "Veuillez entrer 2 caractères ou plus pour ce champ."
   );
 };
 
